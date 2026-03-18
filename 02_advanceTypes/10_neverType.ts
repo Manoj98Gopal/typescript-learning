@@ -8,5 +8,7 @@ function processEvents(): never {
 }
 
 reject("...");
-processEvents();
-console.log("Hello world");
+
+// unreachable codes if you remove the comment compiler won't build your ts file
+// processEvents();
+// console.log("Hello world");
