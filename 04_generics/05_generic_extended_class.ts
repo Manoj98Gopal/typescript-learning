@@ -30,6 +30,7 @@ class searchableStore<T extends { name: string }> extends Store<T> {
 // Fix the generic type parameter
 class ProductStore extends Store<Product> {
   filterByCategory(category: string): Product[] {
+    console.log(category)
     return [];
   }
 }

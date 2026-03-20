@@ -8,11 +8,11 @@ echo(true);
 
 // we need to restrict the generic type
 // for this function I am restricted to string and number, if you try to another you will get error
-function echo1<T extends string | number>(value: T): T {
+function echo11<T extends string | number>(value: T): T {
   return value;
 }
 
-echo1("manoj");
+echo11("manoj");
 
 interface Person1 {
   name: string;

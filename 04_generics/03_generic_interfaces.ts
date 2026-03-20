@@ -4,20 +4,18 @@ interface Result<T> {
 }
 
 function fetch<T>(url: string): Result<T> {
+  console.log(url);
   return { data: null, error: null };
 }
 
-
 interface User {
-    fullName : string
+  fullName: string;
 }
 
 interface Product {
-    title : string
+  title: string;
 }
 
+let result1 = fetch<User>("url");
 
-let result1 = fetch<User>("url")
-
-let result2 = fetch<Product>("url")
-
+let result2 = fetch<Product>("url");
