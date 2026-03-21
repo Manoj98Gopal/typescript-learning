@@ -7,8 +7,10 @@ interface ReminderListProps {
 const ReminderList = ({items}:ReminderListProps) => {
   return (
     <div>
-        <ul>
-            {items?.map(item => <div key={item.id}>{item.title}</div>)}
+        <ul className="border border-gray-300 rounded-2xl overflow-hidden">
+            {items?.map(item => <li key={item.id}
+            className="p-2 border border-gray-200"
+            >{item.title}</li>)}
         </ul>
     </div>
   )
