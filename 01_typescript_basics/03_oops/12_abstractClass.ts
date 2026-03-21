@@ -1,0 +1,22 @@
+abstract class Shape {
+  constructor(public color: string) {}
+
+  abstract render(): void;
+}
+
+class Circle extends Shape {
+  constructor(
+    public radius: number,
+    color: string
+  ) {
+    super(color);
+  }
+
+  override render(): void {
+    console.log("rendering circle");
+  }
+}
+
+let shape1 = new Circle(4, "red");
+
+shape1.render();
