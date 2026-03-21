@@ -1,9 +1,12 @@
+import ReminderList from "./components/ReminderList";
+import Reminder from "./models/reminder";
+
+const list: Reminder[] = [{ id: 1, title: "Reminder 1" }];
+
 function App() {
   return (
     <div className="p-6">
-      <button className="bg-blue-500 text-white px-4 py-2 rounded-lg cursor-pointer hover:bg-blue-600">
-        Click me{" "}
-      </button>
+      <ReminderList items={list} />
     </div>
   );
 }
